@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmonGroups | Build Dreams, Launch Careers 🚀</title>
+    <meta name="description"
+        content="AmonGroups is a futuristic freelancing company founded by student co-founders. We build premium software and provide industry-leading internships.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for FontAwesome -->
+</head>
+
+<body class="bg-cosmic text-white overflow-x-hidden">
+    <!-- Background Canvas for Three.js -->
+    <canvas id="cosmic-bg"></canvas>
+
+    <!-- Star Particle Overlay -->
+    <div id="star-field"></div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="nav-glass">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="assets/logo.png" alt="AmonGroups Logo" class="logo-img">
+                <span class="logo-text">Amon<span class="text-cyan">Groups</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#internships" class="nav-link">Internships</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="social-links-nav">
+                <a href="https://www.linkedin.com/company/111508172/" target="_blank" class="glow-hover"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/penjendru01varun" target="_blank" class="glow-hover"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://penjendruvarun.vercel.app/" target="_blank" class="glow-hover"><i
+                        class="fas fa-globe"></i></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-title gradient-text">AmonGroups — Build Dreams, Launch Careers 🚀</h1>
+                    <p class="hero-subtext typed-text">Freelancing studio by students, for the future. Est. Jan 2026</p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-glow">View Our Work</a>
+                        <a href="#internships" class="btn btn-pulse">Join Internship</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div id="hero-3d-model"></div>
+                    <div class="floating-profile-previews">
+                        <div class="preview-card glass float-1">
+                            <div class="preview-img-wrap"><img
+                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=100&h=100"
+                                    alt="Varun"></div>
+                            <div class="preview-info">
+                                <h6>Varun</h6>
+                                <span>Co-Founder</span>
+                            </div>
+                        </div>
+                        <div class="preview-card glass float-2">
+                            <div class="preview-img-wrap"><img
+                                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=100&h=100"
+                                    alt="Bharani"></div>
+                            <div class="preview-info">
+                                <h6>Bharani</h6>
+                                <span>Co-Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll to Explore</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container section-padding">
+                <h2 class="section-title text-center" data-reveal>The Visionaries</h2>
+                <div class="founders-grid">
+                    <!-- Penjendru Varun -->
+                    <div class="founder-card glass tilt" data-reveal>
+                        <div class="founder-header">
+                            <div class="profile-frame">
+                                <div class="orbit-border"></div>
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=400&h=400"
+                                    alt="Penjendru Varun" class="founder-img">
+                            </div>
+                            <div class="founder-id">
+                                <h3 class="glow-text">PENJENDRU VARUN</h3>
+                                <div class="badge-set">
+                                    <span class="badge">CO-FOUNDER</span>
+                                    <span class="badge secondary">3rd Year Student</span>
+                                </div>
+                                <p class="founder-role">Full Stack Developer | UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="founder-body">
+                            <p class="founder-desc">"I craft end-to-end applications with pixel-perfect UI and seamless
+                                user experiences."</p>
+                            <div class="tech-icons">
+                                <span title="React"><i class="fab fa-react"></i></span>
+                                <span title="Next.js"><i class="simple-icon-nextdotjs"></i></span>
+                                <span title="Node.js"><i class="fab fa-node-js"></i></span>
+                                <span title="Figma"><i class="fab fa-figma"></i></span>
+                            </div>
+                        </div>
+                        <div class="founder-footer">
+                            <div class="founder-socials">
+                                <a href="https://www.linkedin.com/in/penjendruvarun/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/penjendru01varun" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://penjendruvarun.vercel.app/" target="_blank"><i
+                                        class="fas fa-globe"></i></a>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-glow">Resume</a>
+                        </div>
+                    </div>
+
+                    <!-- Bharani Kumar GV -->
+                    <div class="founder-card glass tilt" data-reveal>
+                        <div class="founder-header">
+                            <div class="profile-frame">
+                                <div class="orbit-border ccw"></div>
+                                <img src="assets/bharani.png" alt="Bharani Kumar GV" class="founder-img">
+                            </div>
+                            <div class="founder-id">
+                                <h3 class="glow-text">BHARANI KUMAR GV</h3>
+                                <div class="badge-set">
+                                    <span class="badge">CO-FOUNDER</span>
+                                    <span class="badge secondary">2nd Year Student</span>
+                                </div>
+                                <p class="founder-role">Full Stack Developer | AI Enthusiast</p>
+                            </div>
+                        </div>
+                        <div class="founder-body">
+                            <p class="founder-desc">"Building scalable backend systems and integrating modern AI
+                                technologies into software."</p>
+                            <div class="tech-icons">
+                                <span title="Python"><i class="fab fa-python"></i></span>
+                                <span title="Django"><i class="simple-icon-django"></i></span>
+                                <span title="MongoDB"><i class="simple-icon-mongodb"></i></span>
+                                <span title="AWS"><i class="fab fa-aws"></i></span>
+                            </div>
+                        </div>
+                        <div class="founder-footer">
+                            <div class="founder-socials">
+                                <a href="https://www.linkedin.com/in/bharanikumar-g-v-525790355/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/Bharanikumar07/" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-glow">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connection-particles"></div>
+        </section>
+
+        <!-- Projects Showcase -->
+        <section id="projects" class="projects-section">
+            <div class="container section-padding">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Project Showcase</h2>
+                    <p class="section-subtitle">Delivering high-impact digital solutions across the globe.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Resume Checker AI -->
+                    <div class="project-card glass tilt" data-reveal>
+                        <div class="project-badge">⭐ Client Favorite</div>
+                        <div class="project-img-container">
+                            <img src="assets/project1.png" alt="Resume Checker AI">
+                            <div class="project-overlay">
+                                <a href="https://clientaiesume.vercel.app/" target="_blank"
+                                    class="btn btn-sm btn-glow">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="client-tag">Client Project</span>
+                                <span class="budget-tag">$<span class="count-up" data-target="300">0</span></span>
+                            </div>
+                            <h3>Resume Checker AI</h3>
+                            <p class="project-desc">AI-powered resume optimization tool with ATS scoring and chatbot
+                                recommendations.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> ATS Score Checker</li>
+                                <li><i class="fas fa-robot"></i> AI Change Advisor</li>
+                                <li><i class="fas fa-file-alt"></i> Resume Builder</li>
+                            </ul>
+                            <div class="tech-stack-icons">
+                                <span class="ts-icon" title="React">R</span>
+                                <span class="ts-icon" title="Next.js">N</span>
+                                <span class="ts-icon" title="OpenAI">O</span>
+                                <span class="ts-icon" title="Tailwind">T</span>
+                            </div>
+                            <div class="project-testimonial-mini">
+                                <div class="tm-stars">⭐⭐⭐⭐⭐</div>
+                                <p>"Great UI, works for all cases! Amazing product"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Learning Platform 2050 -->
+                    <div class="project-card glass tilt premium" data-reveal>
+                        <div class="project-badge">🏆 Premium Delivery</div>
+                        <div class="project-img-container">
+                            <img src="assets/project2.png" alt="Learning Platform 2050">
+                            <div class="project-overlay">
+                                <a href="https://spiritacademy.vercel.app/" target="_blank"
+                                    class="btn btn-sm btn-glow">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="client-tag">Premium Project</span>
+                                <span class="budget-tag">$<span class="count-up" data-target="1500">0</span></span>
+                            </div>
+                            <h3>Learning Platform 2050</h3>
+                            <p class="project-desc">AI-powered educational ecosystem designed for next-gen learning
+                                experiences.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-brain"></i> Predictive Intelligence</li>
+                                <li><i class="fas fa-cube"></i> Immersive 3D UI</li>
+                                <li><i class="fas fa-language"></i> Multi-language AI</li>
+                            </ul>
+                            <div class="tech-stack-icons">
+                                <span class="ts-icon" title="Next.js 14">N</span>
+                                <span class="ts-icon" title="Three.js">3</span>
+                                <span class="ts-icon" title="TensorFlow">T</span>
+                                <span class="ts-icon" title="GSAP">G</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Spirit Academy -->
+                    <div class="project-card glass tilt" data-reveal>
+                        <div class="project-badge">✨ Advanced Edition</div>
+                        <div class="project-img-container">
+                            <img src="assets/project3.png" alt="Spirit Academy">
+                            <div class="project-overlay">
+                                <a href="https://spiritacademy.vercel.app/" target="_blank"
+                                    class="btn btn-sm btn-glow">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="client-tag">Internal Evolution</span>
+                                <span class="budget-tag">$<span class="count-up" data-target="1500">0</span></span>
+                            </div>
+                            <h3>Spirit Academy v2</h3>
+                            <p class="project-desc">Next-gen learning platform with extreme focus on animations and
+                                gamification.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-magic"></i> Cutting-edge Motion</li>
+                                <li><i class="fas fa-gamepad"></i> Gamified Paths</li>
+                                <li><i class="fas fa-database"></i> Real-time Sync</li>
+                            </ul>
+                            <div class="tech-stack-icons">
+                                <span class="ts-icon" title="Next.js">N</span>
+                                <span class="ts-icon" title="GSAP">G</span>
+                                <span class="ts-icon" title="WebGL">W</span>
+                                <span class="ts-icon" title="Prisma">P</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internships" class="internship-section">
+            <div class="container section-padding">
+                <div class="internship-wrapper" data-reveal>
+                    <div class="internship-text">
+                        <h2 class="section-title gradient-text">Launch Your Career with AmonGroups 🚀</h2>
+                        <p class="internship-subtext">Flexible timing • Real projects • Certification</p>
+
+                        <div class="internship-poster-wrap float-animation">
+                            <img src="assets/internship_poster.png" alt="Internship Poster" class="poster-img">
+                            <div class="poster-sparkles"></div>
+                        </div>
+                    </div>
+
+                    <div class="internship-details-grid">
+                        <div class="price-cards">
+                            <div class="price-card glass float-1">
+                                <div class="price-icon">💎</div>
+                                <h4>1 Month</h4>
+                                <p class="price">₹100</p>
+                                <p class="benefit">Official Certificate</p>
+                            </div>
+                            <div class="price-card glass float-2 highlight">
+                                <div class="price-icon">🔥</div>
+                                <h4>2-3 Months</h4>
+                                <p class="price">₹200</p>
+                                <p class="benefit">Certificate + Projects</p>
+                            </div>
+                        </div>
+
+                        <div class="process-flow">
+                            <h3>How to Join?</h3>
+                            <div class="steps-container">
+                                <div class="step-item">
+                                    <div class="step-num">1</div>
+                                    <p>Apply via Google Form</p>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-num">2</div>
+                                    <p>Receive Offer Letter 📩</p>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-num">3</div>
+                                    <p>Complete Tasks ✅</p>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-num">4</div>
+                                    <p>Get Certified 🎓</p>
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxJWGSZ1o9V4Urgn6WDhuntQzi8Dpy9-lTV5yvJU4iERrOnQ/viewform?usp=preview"
+                                target="_blank" class="btn btn-lg btn-glow pulse-btn">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container section-padding">
+                <h2 class="section-title text-center" data-reveal>What Clients Say</h2>
+                <div class="testimonials-carousel" data-reveal>
+                    <div class="testimonial-card glass">
+                        <div class="tm-header">
+                            <div class="tm-avatar"><img src="assets/testimonial1.png" alt="Client"></div>
+                            <div class="tm-meta">
+                                <h5>TechLead at Startup</h5>
+                                <div class="tm-stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="tm-content">"It was a great website with amazing UI — works for all cases! AmonGroups
+                            delivered exactly what we needed."</p>
+                    </div>
+                    <!-- More placeholders -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container section-padding">
+                <div class="contact-grid">
+                    <div class="contact-form-wrap glass" data-reveal>
+                        <h3>Get in Touch</h3>
+                        <form id="contact-form">
+                            <div class="form-group floating">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group floating">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="form-group floating">
+                                <textarea id="message" required placeholder=" "></textarea>
+                                <label for="message">Project Details</label>
+                            </div>
+                            <button type="submit" class="btn btn-glow w-100">Send Message 🚀</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-wrap" data-reveal>
+                        <div class="info-card glass">
+                            <i class="fas fa-envelope"></i>
+                            <p>contact@amongroups.com</p>
+                        </div>
+                        <div class="map-placeholder glass">
+                            <div class="animated-map"></div>
+                            <p>Based in India, Serving Globally</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-glass">
+        <div class="container footer-content">
+            <div class="footer-divider-glow"></div>
+            <div class="footer-main">
+                <p>AmonGroups © 2026. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                </div>
+                <p class="made-by">Made with ❤️ by <span class="text-cyan">Penjendru Varun</span> & <span
+                        class="text-violet">Bharani Kumar GV</span></p>
+            </div>
+        </div>
+        <div class="footer-constellation"></div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
